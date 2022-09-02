@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  background: rgba(49,29,73,1);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7b4397, rgba(49,29,73,1));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7b4397, rgba(49,29,73,1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #fff;
+  font-family: "system-ui";
+  font-size: 18px;
+}
+small {
+  letter-spacing: 2px;
+}
+.crud {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+.head {
+  font-size: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+input {
+  font-weight: bold;
+  font-size: 16px;
+  width: 99%;
+  height: 30px;
+  outline: none;
+  border: none;
+  background-color: #8879B0;
+  margin: 4px 0;
+  padding: 4px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  transition: 600ms ease;
+}
+
+
+
+input:focus {
+  color: #fff;
+  border: 1px solid white;
+  background-color: rgba(49,29,73,1);
+  transform: scale(1.01);
+}
+
+input::placeholder {
+  font-weight: normal;
+  color: #D0C9C0;
+}
+
+
+.price input{
+  width: 24%
+}
+
+#total {
+  text-align: left;
+  display: inline-block;
+  font-size: 17px;
+  width: 30%;
+  background-color : #7858A6;
+  margin: 4px;
+  padding: 6px 15px;
+  border-radius: 8px;
+}
+
+#total::before {
+  content: "Total : ";
+}
+
+.btn {
+  background: #D1512D;
+}
+.btn:hover {
+  background: #EF5B0C;
+}
+.btn2 {
+  background: #47af4c;
+}
+.btn2:hover{
+  background: #3CCF4E
+}
+
+button {
+  font-size: 16px;
+  margin: 4px 0;
+  width: 100%;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background: #7858A6;
+  color: #fff;
+  border-radius: 15px;
+  transition: 350ms ease-in-out;
+}
+
+button:hover {
+  background: #AA2EE6;
+  letter-spacing: 1px;
+}
+
+.btnSearch {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btnSearch button{
+  width: 45%;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+table th {
+  text-transform: uppercase;
+}
+th , td {
+  padding: 5px;
+}
+
+@media (max-width:1500px) {
+  .price input{
+    width: 23.4%
+  }
+
+  #total {
+    width: 30%;
+  }
+    table {
+      font-size: 16px;
+      width: 100%;
+      text-align: center;
+      margin: 10px 0;
+    }
+    table th {
+      text-transform: uppercase;
+    }
+    th , td {
+      padding: 1px;
+    }
+    .td{
+      display: none;   }
+}
+
+
+@media (max-width:900px) {
+  .price input{
+    width: 21.90%;
+  }
+  #total {
+    width: 40%;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CRUDS</title>
+</head>
+
+<body>
+    <div class="crud">
+        <div class="head">
+          <h2>crud</h2>
+          <p>PRODUCT MANAGEMENT SYSTEM</p>
+        </div>
+
+        <div class="inputs">
+          <input type="text" placeholder="Title *" id="title">
+          <div class="price">
+            <input onkeyup="getTotal()" type="number" id="price" placeholder="Price *">
+            <input onkeyup="getTotal()" type="number" id="taxes" placeholder="Taxes">
+            <input onkeyup="getTotal()" type="number" id="ads" placeholder="Ads" >
+            <input onkeyup="getTotal()" type="number" id="discount"  placeholder="Discount">
+            <div id="total"><small></small></div>
+          </div>
+          <input type="number" placeholder="Count ( < 100)" id="count">
+          <input type="text" placeholder="Category *" id="category">
+          <button id="submit">Create</button>
+
+        </div>
+
+        <div class="outputs">
+          <div class="searchBlock">
+            <input onkeyup="searchData(this.value.toLowerCase())"type="text" id="search" placeholder="Search By Title">
+            <div class="btnSearch">
+              <button onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+              <button onclick="getSearchMood(this.id)" id="searchCatregory" >Search By Category</button>
+            </div>
+          </div>
+          <div id="deleteAll">
+
+          </div>
+          <table>
+            <tr>
+              <th>id</th>
+              <th>title</th>
+              <th>price</th>
+              <th class="td">taxes</th>
+              <th class="td">ads</th>
+              <th class="td">discount</th>
+              <th>total</th>
+              <th>category</th>
+              <th>update</th>
+              <th>delete</th>
+            </tr>
+            <tbody id="tbody">
+
+            </tbody>
+          </table>
+        </div>
+    </div>
+
+
+
+
+<script src="index.js"></script>
+</body>
+
+</html>
